@@ -18,6 +18,11 @@ services:
       - 9200:9200
     networks:
       - esnet
+  spoilerban:
+    container_name: sb-spoilerban
+    build: .
+    ports:
+      - 8084:8084
 
 volumes:
   esdata01:
